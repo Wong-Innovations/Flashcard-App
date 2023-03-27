@@ -12,6 +12,7 @@ const Flashcard = (props) => {
       <TextInput
         style={styles.name}
         placeholder={'New Card'} 
+        placeholderTextColor={'#999'}
         value={props.value.main[currentCard]}
         onChangeText={text => {
           let temp = props.value.main;
@@ -26,6 +27,7 @@ const Flashcard = (props) => {
       <TextInput
         style={styles.description}
         placeholder={'Click to Edit'}
+        placeholderTextColor={'#999'}
         value={props.value.secondary[currentCard]}
         onChangeText={text => {
           let temp = props.value.secondary;
@@ -59,7 +61,8 @@ const Flashcard = (props) => {
               secondary: props.value.secondary,
               answer: text
             })}
-            placeholder='Answer'
+            placeholder={'Answer'}
+            placeholderTextColor={'#999'}
           />
         </View>
         <TouchableOpacity

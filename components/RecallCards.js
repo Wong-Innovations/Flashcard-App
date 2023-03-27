@@ -101,6 +101,7 @@ const RecallCards = ({ navigation, route }) => {
         <TextInput
           style={styles.input}
           placeholder={'Answer'}
+          placeholderTextColor={'#999'}
           value={guess}
           onChangeText={text => setGuess(text)}
         />

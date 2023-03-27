@@ -7,7 +7,8 @@ const Flashcard = (props) => {
     <View style={styles.flashcard}>
       <TextInput
         style={styles.name}
-        placeholder={'My Flashcards'} 
+        placeholder={'My Flashcards'}
+        placeholderTextColor={'#999'}
         value={props.value.name}
         onChangeText={text => props.onChangeText({
           name: text,
@@ -17,6 +18,7 @@ const Flashcard = (props) => {
       <TextInput
         style={styles.description}
         placeholder={'Click to Edit'}
+        placeholderTextColor={'#999'}
         value={props.value.description}
         onChangeText={text => props.onChangeText({
           name: props.value.name,
